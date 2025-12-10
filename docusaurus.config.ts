@@ -1,13 +1,12 @@
 import {themes as prismThemes} from 'prism-react-renderer';
 import type {Config} from '@docusaurus/types';
 import type * as Preset from '@docusaurus/preset-classic';
-
 // This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
 
 const config: Config = {
   title: 'Physical AI & Humanoid Robotics',
   tagline: 'A comprehensive guide to embodied intelligence and autonomous systems',
-  favicon: 'img/favicon.ico',
+  favicon: '../img/favicon.ico',
 
   // Future flags, see https://docusaurus.io/docs/api/docusaurus-config#future
   future: {
@@ -22,8 +21,8 @@ const config: Config = {
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'your-org', // Usually your GitHub org/user name.
-  projectName: 'physical-ai-book', // Usually your repo name.
+  organizationName: 'amnarashid14', // Usually your GitHub org/user name.
+  projectName: 'ai-robotics-book', // Usually your repo name.
 
   onBrokenLinks: 'throw',
 
@@ -43,8 +42,8 @@ const config: Config = {
           sidebarPath: './sidebars.ts',
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/your-org/physical-ai-book/edit/main/website/',
+        //   editUrl:
+        //     'https://github.com/your-org/physical-ai-book/edit/main/website/',
         },
         blog: false, // Disable blog for book format
         theme: {
@@ -79,7 +78,7 @@ const config: Config = {
       title: 'Physical AI & Humanoid Robotics',
       logo: {
         alt: 'Physical AI Book Logo',
-        src: 'img/logo.svg',
+        src: '../img/logo.svg',
       },
       items: [
         {
@@ -89,7 +88,7 @@ const config: Config = {
           label: 'Book',
         },
         {
-          href: 'https://github.com/your-org/physical-ai-book',
+          href: 'https://github.com/amnarashid14/ai-robotics-book',
           label: 'GitHub',
           position: 'right',
         },
@@ -149,7 +148,7 @@ const config: Config = {
           items: [
             {
               label: 'GitHub',
-              href: 'https://github.com/your-org/physical-ai-book',
+              href: 'https://github.com/amnarashid14/ai-robotics-book',
             },
           ],
         },
