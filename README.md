@@ -1,48 +1,41 @@
-# Physical AI & Humanoid Robotics Book
+# Website
 
-A comprehensive 5000-7000 word technical book covering ROS 2, digital twin simulations, NVIDIA Isaac, and Vision-Language-Action models for embodied intelligence and autonomous humanoid systems.
-
-## Overview
-
-This book provides a complete educational resource for students, researchers, and engineers interested in physical AI and humanoid robotics. It covers the four foundational systems needed to build autonomous humanoid robots:
-
-1. **Module 1**: The Robotic Nervous System (ROS 2)
-2. **Module 2**: Digital Twin Simulation (Gazebo & Unity)
-3. **Module 3**: The AI-Robot Brain (NVIDIA Isaac)
-4. **Module 4**: Vision-Language-Action (VLA) Systems
-
-## Prerequisites
-
-- Ubuntu 22.04 LTS (recommended) or compatible Linux distribution
-- Basic programming knowledge (Python/C++)
-- Fundamental understanding of AI/ML concepts
-- Minimum 16GB RAM, recommended 64GB
-- NVIDIA GPU with CUDA support (minimum RTX 3060, recommended RTX 4090)
+This website is built using [Docusaurus](https://docusaurus.io/), a modern static website generator.
 
 ## Installation
 
-For detailed installation instructions for all required dependencies (ROS 2 Humble Hawksbill, Gazebo Fortress, NVIDIA Isaac ROS), please refer to the book content which includes comprehensive setup guides.
-
-## Building the Book
-
 ```bash
-# Navigate to the website directory
-cd website
-
-# Install dependencies
-npm install
-
-# Start the development server
-npm start
-
-# Build for production
-npm run build
+yarn
 ```
 
-## Contributing
+## Local Development
 
-This book is built with Docusaurus. Contributions are welcome! Please follow the guidelines in the book content for proper technical accuracy and citation standards.
+```bash
+yarn start
+```
 
-## License
+This command starts a local development server and opens up a browser window. Most changes are reflected live without having to restart the server.
 
-This educational content is provided for academic and research purposes."# ai-robotics-book" 
+## Build
+
+```bash
+yarn build
+```
+
+This command generates static content into the `build` directory and can be served using any static contents hosting service.
+
+## Deployment
+
+Using SSH:
+
+```bash
+USE_SSH=true yarn deploy
+```
+
+Not using SSH:
+
+```bash
+GIT_USER=<Your GitHub username> yarn deploy
+```
+
+If you are using GitHub pages for hosting, this command is a convenient way to build the website and push to the `gh-pages` branch.
